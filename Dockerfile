@@ -5,6 +5,6 @@ mkdir opa
 WORKDIR opa
 RUN pip install youtube-dl
 COPY oper.sh oper.sh
-COPY opermp4.sh opermp4.sh
-RUN chmod +x oper.sh && chmod +x opermp4.sh
+COPY operavi.sh operavi.sh
+RUN chmod +x oper.sh && chmod +x operavi.sh
 CMD bash
