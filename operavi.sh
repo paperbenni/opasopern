@@ -27,7 +27,8 @@ echo "warte kurz..."
 youtube-dl -o opa.mp4 "$1"
 for file in *
 do
-ffmpeg -i $file opa.avi
+ffmpeg -i $file -crf 23 opa.avi
+
 rm $file
 transfer opa.avi
 rm opa.avi
